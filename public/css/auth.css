@@ -1,0 +1,373 @@
+/* =========================================
+   BOOKSTORE - AUTENTICACAO
+========================================= */
+
+.store-auth-page {
+    --auth-brown: #503929;
+    --auth-dark: #35251b;
+    --auth-gold: #a17b43;
+    --auth-beige: #eee5d6;
+    --auth-border: #e2d9cc;
+    --auth-muted: #847464;
+
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 65px 24px 70px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.store-auth-page * {
+    box-sizing: border-box;
+}
+
+/* CABECALHO */
+
+.store-auth-heading {
+    text-align: center;
+    margin-bottom: 36px;
+}
+
+.store-auth-label {
+    display: inline-block;
+    color: var(--auth-gold);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 16px;
+}
+
+.store-auth-heading h1 {
+    font-family: Georgia, serif;
+    font-size: 42px;
+    line-height: 1.2;
+    color: var(--auth-dark);
+    margin: 0 0 16px;
+}
+
+.store-auth-heading p {
+    color: var(--auth-muted);
+    font-size: 16px;
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* CARTAO */
+
+.store-auth-card {
+    width: 100%;
+    max-width: 520px;
+    margin: 0 auto;
+    padding: 36px 40px;
+    background: #ffffff;
+    border: 1px solid var(--auth-border);
+    border-radius: 22px;
+    box-shadow: 0 12px 40px rgba(53, 37, 27, 0.07);
+}
+
+.store-auth-register {
+    max-width: 560px;
+}
+
+/* INTRODUCAO */
+
+.store-auth-intro {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.store-auth-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 64px;
+    margin: 0 auto 18px;
+    border-radius: 18px;
+    background: var(--auth-beige);
+    color: var(--auth-gold);
+}
+
+.store-auth-intro h2 {
+    font-family: Georgia, serif;
+    color: var(--auth-dark);
+    font-size: 27px;
+    margin: 0 0 10px;
+}
+
+.store-auth-intro p {
+    color: var(--auth-muted);
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* FORMULARIO */
+
+.store-auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    margin: 0;
+}
+
+.store-auth-field {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    text-align: left;
+}
+
+.store-auth-field label {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--auth-dark);
+}
+
+.store-auth-field input {
+    display: block;
+    width: 100%;
+    height: 51px;
+    padding: 0 15px;
+    background: #faf8f5;
+    border: 1px solid var(--auth-border);
+    border-radius: 10px;
+    color: var(--auth-dark);
+    font-family: inherit;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s,
+                box-shadow 0.2s,
+                background 0.2s;
+}
+
+.store-auth-field input::placeholder {
+    color: #a49a90;
+}
+
+.store-auth-field input:focus {
+    background: #ffffff;
+    border-color: var(--auth-gold);
+    box-shadow: 0 0 0 4px rgba(161, 123, 67, 0.12);
+}
+
+.store-auth-field small {
+    color: var(--auth-muted);
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+/* OPCOES DE LOGIN */
+
+.store-auth-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    font-size: 12px;
+}
+
+.store-auth-remember {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--auth-muted);
+    cursor: pointer;
+}
+
+.store-auth-remember input {
+    width: 16px;
+    height: 16px;
+    margin: 0;
+    accent-color: var(--auth-brown);
+    cursor: pointer;
+}
+
+.store-auth-options a {
+    color: var(--auth-gold);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.store-auth-options a:hover {
+    text-decoration: underline;
+}
+
+/* BOTAO PRINCIPAL */
+
+.store-auth-submit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 52px;
+    margin-top: 5px;
+    padding: 14px 20px;
+    background: var(--auth-brown);
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.2s,
+                transform 0.2s;
+}
+
+.store-auth-submit:hover {
+    background: var(--auth-dark);
+    transform: translateY(-2px);
+}
+
+.store-auth-submit:active {
+    transform: translateY(0);
+}
+
+/* SEPARADOR */
+
+.store-auth-divider {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin: 28px 0 20px;
+    color: var(--auth-muted);
+    font-size: 13px;
+}
+
+.store-auth-divider::before,
+.store-auth-divider::after {
+    content: "";
+    height: 1px;
+    background: var(--auth-border);
+    flex: 1;
+}
+
+.store-auth-divider span {
+    text-align: center;
+}
+
+/* BOTAO SECUNDARIO */
+
+.store-auth-secondary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 49px;
+    padding: 12px 18px;
+    background: var(--auth-beige);
+    border: 1px solid var(--auth-border);
+    border-radius: 10px;
+    color: var(--auth-brown);
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: background 0.2s,
+                transform 0.2s;
+}
+
+.store-auth-secondary:hover {
+    background: #e3d5bf;
+    color: var(--auth-dark);
+    transform: translateY(-2px);
+}
+
+/* VOLTAR A LIVRARIA */
+
+.store-auth-back {
+    display: table;
+    margin: 30px auto 0;
+    color: var(--auth-muted);
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.store-auth-back:hover {
+    color: var(--auth-dark);
+}
+
+/* MENSAGENS DE ERRO */
+
+.store-auth-errors {
+    padding: 14px 18px;
+    margin-bottom: 24px;
+    background: #fff1f0;
+    border: 1px solid #edc3c0;
+    border-radius: 10px;
+    color: #a33232;
+    font-size: 13px;
+    text-align: left;
+}
+
+.store-auth-errors p {
+    margin: 5px 0;
+    line-height: 1.6;
+}
+
+/* MENSAGENS DE SUCESSO */
+
+.store-auth-success {
+    padding: 14px 18px;
+    margin-bottom: 24px;
+    background: #edf5ed;
+    border: 1px solid #c9dfc9;
+    border-radius: 10px;
+    color: #39734b;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+/* ACESSIBILIDADE */
+
+.store-auth-submit:focus-visible,
+.store-auth-secondary:focus-visible,
+.store-auth-back:focus-visible {
+    outline: 3px solid var(--auth-gold);
+    outline-offset: 4px;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 600px) {
+
+    .store-auth-page {
+        padding: 40px 18px 45px;
+    }
+
+    .store-auth-heading h1 {
+        font-size: 30px;
+    }
+
+    .store-auth-heading p {
+        font-size: 14px;
+    }
+
+    .store-auth-card {
+        padding: 28px 22px;
+        border-radius: 16px;
+    }
+
+    .store-auth-intro h2 {
+        font-size: 24px;
+    }
+
+    .store-auth-options {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    .store-auth-page * {
+        transition: none;
+    }
+
+}
